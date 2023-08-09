@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Evspresso</title>
+        <meta property="og:title" content="Evspresso - A Coffee Lover's Paradise">
+        <meta name="description" content="Welcome to Evspresso!
+        Step into a world where each sip is an enchanting journey into the heart of coffee love. At Evspresso, we are dedicated to crafting the finest coffee experiences that awaken your senses and embrace your passion for all things caffeinated.">
+        <meta property="og:description" content="Indulge in the symphony of flavors at Evspresso. Join our coffee community and savor the passion behind every cup.">
+        <meta property="og:image" content="./img/meta-img.png">
+        <meta property="og:url" content="https://example.com/espresso-euphoria">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Evspresso">
+        <meta property="og:locale" content="en_US">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- maincontainer -->
+        <div class="maincontainer">
+            <!-- navigation section -->
+            <div class="navigation-section" id="navigation-section">
+                <div class="logo-section">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <h1>Evspresso</h1>
+                </div>
+                <div class="navlinks-overlay" id="navlinks-overlay">
+                </div>
+                <div class="navlinks" id="navlinks">
+                    <li onclick="closeMenu()"><a href="#">Home</a></li>
+                    <li onclick="closeMenu()"><a href="#About">About</a></li>
+                    <li onclick="closeMenu()"><a href="#Coffee">Coffee</a></li>
+                    <li onclick="closeMenu()"><a href="#Review">Review</a></li>
+                    <li onclick="closeMenu()"><a href="#Blog">Blog</a></li>
+                </div>
+
+                <div class="menu-bar">
+                    <ion-icon name="menu" id="menuBar"></ion-icon>
+                </div>
+            </div>
+            <!-- navigation section end-->
+
+            <!-- hero section -->
+            <div class="hero-section">
+                <div class="hero-details">
+                    <h1>Start your day with<br>a black Coffee</h1>
+                    <span>Order Now</span>
+                </div>
+            </div>
+            <!-- hero section end-->
+
+            <!-- about-section -->
+            <div class="about-section" id="About">
+                <div class="video-container">
+                    <img src="./img/about-img.png" alt="">
+                    <span id="show-video-cont"><ion-icon name="play-outline"></ion-icon></span>
+                </div>
+
+                <div class="about-details">
+                    <label>LIVE COFFEE MAKING PROCESS.</label>
+                    <h1>We Telecast our<br>Coffee Making Live</h1>
+                    <p class="about-p-light">We are here to listen from you deliver exellence</p>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                </div>
+
+                <!-- video popup -->
+                <div class="video-popup-cont" id="video-Popup">
+                    <span class="close" id="close-vid">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </span>
+                    <div class="video-player-cont">
+                       
+                    </div>
+                </div>
+
+            </div>
+            <!-- about-section end-->
+
+
+            <!-- menu-section -->
+            <div class="menu-section" id="Coffee">
+                <div class="menu-header">
+                    <h1>What kind of Coffee we serve for you</h1>
+                    <label>Who are in extremely love with eco friendly system.</label>
+                </div>
+
+                <div class="menu-container">
+                    <li>
+                        <span>
+                            <label>Cappuccino</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk foam.</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Americano</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>Caffè Americano is a type of coffee drink prepared by diluting an espresso with hot water.</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Espresso</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>Espresso is one of the most popular coffee-brewing methods, of Italian origin.</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Macchiato</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>Caffè macchiato, sometimes called espresso macchiato, is an espresso coffee drink with a small amount of milk, usually foamed. </p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Mocha</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>A caffè mocha, also called mocaccino, is a chocolate-flavoured warm beverage that is a variant of a caffè latte.</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Coffee Latte</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>Caffè latte is a coffee drink of Italian origin made with espresso and steamed milk.</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Piccolo Latte</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>Piccolo latte is a fresh roasted coffee that's comprised of a single shot of ristretto that's served in a demitasse glass </p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Ristretto</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>Ristretto coffee is made with the same amount of ground coffee, but extracted with a finer grind using half as much water.</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <label>Affogato</label>
+                            <label class="price">$13</label>
+                        </span>
+                        <p>An affogato, more traditionally known as "affogato al caffè", is an Italian coffee-based dessert.</p>
+                    </li>
+
+                    
+                </div>
+            </div>
+
+            <!-- Costumer Gallery Section -->
+            <div class="gallery-section">
+
+                <div class="gallery-header">
+                    <h1>Customer daily Gallery</h1>
+                    <label>We alwasy care our customer</label>
+                </div>
+
+                <div class="gallery-holder">
+                    <div class="left-gallery">
+                        <div class="top-left-gallery">
+                            <img src="./img/gallery-pic1.png" alt="" width="100%">
+
+                        </div>
+                        <div class="bottom-left-gallery">
+                            <div class="left-1-gallery">
+                                 <img src="./img/gallery-pic2.png" alt="">
+                            </div>
+                            <div class="left-1-gallery">
+                                 <img src="./img/gallery-pic3.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-gallery">
+                        <div class="right-1-gallery">
+                             <img src="./img/gallery-pic4.png" alt="" width="100%">
+                        </div>
+                        <div class="right-1-gallery right-2-gallery">
+                             <img src="./img/gallery-pic5.png" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Costumer Gallery Section end-->
+
+            <!-- costumer Review -->
+            <div class="costumer-section" id="Review">
+                <div class="costumer-header">
+                    <h1>Customer testimonials</h1>
+                    <label>We value the words of our customers.</label>
+                </div>
+                <div class="review-holder">
+                    <swiper-container class="mySwiper" 
+                        pagination-dynamic-bullets="true"
+                        pagination-clickable="true" 
+                        space-between="30"
+                        centered-slides="true" 
+                        autoplay-delay="3000" 
+                        effect="fade"
+                        autoplay-disable-on-interaction="false" style="
+                        --swiper-pagination-color: #8e8681; 
+                        --swiper-pagination-bullet-active-width:15px;
+                        --swiper-pagination-bullet-height:20px;
+                        --swiper-pagination-bullet-border-radius:50px;
+                        ">
+                        
+                        <swiper-slide>
+                            <div class="customer-icon">
+                                <img src="./img/customer1.jpg" alt="">
+                            </div>
+                            <div class="costumer-name-reviews">
+                                <label>Daniel Larvis</label>
+                                <span>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star-half" class="filled-start"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                            </div>
+                            <p>I recently tried the new espresso blend at this coffee shop, and I was blown away! The flavor was incredibly rich and robust, with just the right amount of crema on top. It's evident that the baristas are skilled at their craft. The ambiance of the coffee shop added to the experience - cozy and inviting. I can't wait to go back for another cup!</p>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="customer-icon">
+                                <img src="./img/customer2.jpg" alt="">
+                            </div>
+                            <div class="costumer-name-reviews">
+                                <label>Francis Gabby</label>
+                                <span>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star-half" class="filled-start"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                            </div>
+                            <p>I'm a huge fan of cold brew, and this coffee shop's cold brew exceeded my expectations. It was smooth, perfectly chilled, and had a delightful undertone of chocolate notes. The packaging was eco-friendly, which is a big plus for me. I appreciate their commitment to quality and sustainability. Thumbs up!</p>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="customer-icon">
+                                <img src="./img/customer3.jpg" alt="">
+                            </div>
+                            <div class="costumer-name-reviews">
+                                <label>Eva Miamore</label>
+                                <span>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star" class="filled-start"></ion-icon>
+                                    <ion-icon name="star-half" class="filled-start"></ion-icon>
+                                </span>
+                            </div>
+                            <p>The pastries at this coffee shop are a hidden gem! I tried their almond croissant, and it was flaky, buttery, and filled with a generous almond paste. It paired wonderfully with my latte. The attention to detail in both the coffee and the food makes this place stand out. I've found my new favorite spot for weekend indulgence.</p>
+                        </swiper-slide>
+                        
+                    </swiper-container>
+                </div>
+            </div>
+            <!-- costumer Review end-->
+
+            <!-- blog-section -->
+            <div class="blog-section" id="Blog">
+                <div class="blog-header">
+                    <h1>Explore our Coffee Collection</h1>
+                    <label>Find Your Perfect Brew at the our Coffee Collection.</label>
+                </div>
+                <div class="blog-product-holder">
+                    <div class="product-cont">
+                        <img src="./img/product/prod1.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod2.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod3.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod4.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod5.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod6.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod7.png" alt="">
+                        <span>$3</span>
+                    </div>
+                    <div class="product-cont">
+                        <img src="./img/product/prod8.png" alt="">
+                        <span>$3</span>
+                    </div>
+                </div>
+            </div>
+            <!-- blog-section end-->
+
+            <!-- footer-section -->
+            <div class="footer-section">
+                <div class="footer-logo logo-section">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <h1>Evspresso</h1>
+                </div>
+
+                <div class="legal-links">
+                    <label>Legal Links</label>
+                    <a href="">Privacy | Policy</a>
+                    <a href="">Disclaimer</a>
+                    <a href="">Terms of Services</a>
+                    <a href="">Financing</a>
+                </div>
+
+                <div class="news-letter">
+                    <h1>Be the first to get new product update</h1>
+                    <input type="email" placeholder="Email address...">
+                    <span>Subscribe</span>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <small>&copy; Copyright CebuCoder | 2023</small>
+                <div class="footer-icon">
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                </div>
+                <small>Distributed By: Template Ventures</small>
+            </div>
+            <!-- footer-section end -->
+
+
+
+        </div>
+        <!-- maincontainer end-->
+    
+    </body>
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+</html>

@@ -1,0 +1,35 @@
+@import "./navigation.css";
+@import "./hero-section.css";
+@import "./about-section.css";
+@import "./menu-section.css";
+@import "./gallery-section.css";
+@import "./costumer-section.css";
+@import "./blog-section.css";
+@import "./footer-section.css";
+
+/* media screen  */
+@import "../@media/@navigation.css";
+/* media screen  end*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.maincontainer{
+    max-width: 1270px;
+    margin: auto;
+    /* position: relative; */
+}
+

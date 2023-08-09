@@ -1,0 +1,33 @@
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    color: #fff;
+}
+.hero-details h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.hero-details span{
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #39271C;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-details span:hover{
+    transform: translateY(-5px);
+}

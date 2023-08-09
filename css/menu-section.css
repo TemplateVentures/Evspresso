@@ -1,0 +1,72 @@
+.menu-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 60px;
+    padding-top: 130px;
+    padding-bottom: 60px;
+    background: url(../img/menu-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-header h1{
+    color: #000000e0;
+    font-weight: 600;
+    font-size: 35px;
+}
+.menu-header label{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.menu-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+.menu-container li{
+    /* max-width: 330px; */
+    width: 30%;
+    height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 1px 2px 10px -3px #8960454b;
+    border: 1px solid #8960453b;
+    transition: 0.32s;
+    margin: 15px;
+}
+.menu-container li:hover{
+    box-shadow: 0px 5px 10px 1px #8960454b;
+}
+.menu-container span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-container label{
+    color: #000000e0;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-container .price{
+    color: #896045;
+}
+.menu-container p{
+    color: #896045;
+    font-size: 13px;
+    font-weight: 300;
+}

@@ -1,0 +1,65 @@
+.navigation-section{
+    max-width: 1270px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    color: #fff;
+    padding: 0 60px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.menu-bar{
+    height: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    display: none;
+}
+.navlinks-overlay{
+    display: none;
+}
+
+/* adding  backroun don nvaigtaion when user scroll 90px */
+.navigation-bg{
+    background: rgba(36, 26, 20, 0.84);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.logo-section{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+.logo img{
+    width: 100%;
+}
+.logo-section h1{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.navlinks{
+    display: flex;
+}
+.navlinks li a{
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}

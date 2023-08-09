@@ -1,0 +1,15 @@
+/* Mobile Phones */
+@media (max-width: 480px) {
+    /* Adjust styling for mobile devices */
+  }
+  
+  /* Tablets */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    /* Adjust styling for tablets */
+  }
+  
+  /* Desktops and Laptops */
+  @media (min-width: 1025px) {
+    /* Adjust styling for desktops and laptops */
+  }
+  
