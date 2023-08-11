@@ -42,6 +42,48 @@ li{
     /* position: relative; */
 }
 
+.back-to-top{
+    position: fixed;
+    bottom: -100%;
+    right: 15px;
+    /* background: #fff; */
+    width: 40px;
+    height: 80px;
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 15;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.show-bck-top{
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+}
+
+.back-to-top ion-icon{
+    transform: rotate(-45deg);
+    animation: float 1s infinite;
+    filter: drop-shadow(-2px 1px 5px #000000e0);
+}
+@keyframes float{
+    100%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: 10px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 390px){
     .footer-header h1,
      .gallery-header h1,

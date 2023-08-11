@@ -10,6 +10,14 @@ function scrollFunction() {
     navigationBg.classList.remove('navigation-bg');
 
   }
+
+  let backTop = document.getElementById('back-to-top');
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+     backTop.classList.add('show-bck-top'); 
+  }
+  else{
+      backTop.classList.remove('show-bck-top');
+  }
 }
 
 
