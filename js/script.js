@@ -1,3 +1,4 @@
+// scroll effect functon on navigation
 window.onscroll = function() {scrollFunction()};
 
 let navigationBg = document.getElementById('navigation-section');
@@ -14,7 +15,7 @@ function scrollFunction() {
 
 
 
-
+// show video function
 let showVideo = document.getElementById('show-video-cont');
 let videoPopup = document.getElementById('video-Popup');
 showVideo.addEventListener('click', () => {
@@ -46,3 +47,10 @@ function closeMenu(){
   navlinkOverlay.classList.remove('show-navlinkOverlay');
   navlinks.classList.remove('show-navlinks');
 }
+
+
+// // order button handler
+// let orderBtn = document.getElementById('order-page');
+// orderBtn.addEventListener('click', () => {
+
+// });

@@ -1,0 +1,42 @@
+/* Mobile Phones */
+@media (max-width: 480px) {
+    /* Adjust styling for mobile devices */
+  }
+  
+  /* Tablets */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    /* Adjust styling for tablets */
+  }
+  
+  /* Desktops and Laptops */
+  @media (min-width: 1025px) {
+    /* Adjust styling for desktops and laptops */
+  }
+
+  @media (max-width: 577px){
+    .costumer-section{
+      padding: 50px 15px;
+      padding-top: 130px;
+    }
+    
+  }
+
+  
+  @media (max-width: 409px) {
+    .costumer-header h1{
+     font-size: 30px;
+  }
+  .costumer-headerlabel{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 354px) {
+  .costumer-header h1{
+   font-size: 23px !important;
+}
+.costumer-header label{
+  font-size: 13px;
+}
+}
+  

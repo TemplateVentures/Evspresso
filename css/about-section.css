@@ -9,7 +9,8 @@
 }
 
 .video-container{
-    width: 550px;
+    min-width: 550px;
+    max-width: 100%;
     height: auto;
     min-height: 320px;
     border-radius: 10px;
@@ -23,6 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 30px;
+    transition: 0.3s;
 }
 
 .video-container img{
@@ -66,6 +69,7 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 500px;
+    transition: 0.3s;
 }
 .about-details label{
     font-size: 13px;
@@ -108,6 +112,7 @@
     opacity: 0;
     transition: 0.3s;
     z-index: 11;
+    padding: 5px;
 }
 
 .show-video{

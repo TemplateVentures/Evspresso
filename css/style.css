@@ -6,11 +6,20 @@
 @import "./costumer-section.css";
 @import "./blog-section.css";
 @import "./footer-section.css";
+@import "./order-section.css";
 
 /* media screen  */
-@import "../@media/@navigation.css";
-/* media screen  end*/
+@import "../@media/m-navigation.css";
+@import "../@media/m-hero-section.css";
+@import "../@media/m-menu-section.css";
+@import "../@media/m-about-section.css";
+@import "../@media/m-gallery-section.css";
+@import "../@media/m-footer-section.css";
+@import "../@media/m-blog-section.css";
+@import "../@media/m-customer-section.css";
 
+
+/* media screen  end*/
 *{
     padding: 0;
     margin: 0;
@@ -31,5 +40,32 @@ li{
     max-width: 1270px;
     margin: auto;
     /* position: relative; */
+}
+
+@media (max-width: 390px){
+    .footer-section h1,
+     .gallery-section h1,
+      .menu-section h1,
+       .about-section h1,
+       .customer-section h1,
+       .blog-section h1{
+        text-align: center !important;
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 390px){
+       .about-section h1{
+        text-align: left !important;
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 390px){
+    .hero-section h1{
+     text-align: left !important;
+     /* font-size: 40px !important; */
+     line-height: 50px;
+     padding: 20px 0;
+ }
 }
 
