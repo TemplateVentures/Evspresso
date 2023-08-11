@@ -43,14 +43,14 @@ li{
 }
 
 @media (max-width: 390px){
-    .footer-section h1,
-     .gallery-section h1,
-      .menu-section h1,
-       .about-section h1,
-       .customer-section h1,
-       .blog-section h1{
+    .footer-header h1,
+     .gallery-header h1,
+      .menu-header h1,
+       .about-header h1,
+       .customer-header h1,
+       .blog-header h1{
         text-align: center !important;
-        font-size: 20px !important;
+        font-size: 23px !important;
     }
 }
 @media (max-width: 390px){

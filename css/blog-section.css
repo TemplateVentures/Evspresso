@@ -1,6 +1,6 @@
 .blog-section{
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     padding: 100px 60px;
     padding-top: 130px;
 }
@@ -16,6 +16,7 @@
     font-weight: 600;
     font-size: 35px;
     text-transform: capitalize;
+    text-align: center;
 }
 .blog-header label{
     color: #777777;
