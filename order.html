@@ -78,29 +78,30 @@
 
                                 <!-- li element will be created base on product selected -->
 
-                                <li>
-                                    <div class="coffee-img">
-                                        <img src="./img/coffee/cappuccino.png" alt="">
-                                    </div>
-                                    <label id="coffe-name">Cappuccino</label>
-                                    <small id="coffee-price">$13</small>
-                                    <small class="remove-coffee"><ion-icon name="close"></ion-icon></small>
-                                </li>
-
-                                <li>
-                                    <div class="coffee-img">
-                                        <img src="./img/coffee/cappuccino.png" alt="">
-                                    </div>
-                                    <label id="coffe-name">Cappuccino</label>
-                                    <small id="coffee-price">$13</small>
-                                    <small class="remove-coffee"><ion-icon name="close"></ion-icon></small>
-                                </li>
+                                <div class="selected-item-holder" id="ListHolder">
+                                    <!-- <li>
+                                        <div class="coffee-img">
+                                            <img src="./img/coffee/cappuccino.png" alt="">
+                                        </div>
+                                        <label class="coffe-name">Cappuccino</label>
+                                        <small class="coffee-price">$13</small>
+                                        <small class="remove-coffee"><ion-icon name="close"></ion-icon></small>
+                                    </li> -->
+                                </div>
 
 
                             </div>
                             <div class="total-order">
-                                <label>Total: $</label>
-                                <small>0</small>
+
+                                <span>
+                                    <label>Quantity:</label>
+                                    <small id="Quantity">0</small>
+                                </span>
+
+                                <span>
+                                    <label>Total: $</label>
+                                    <small id="totalAmount">0</small>
+                                </span>
                             </div>
                             <button>Place Order</button>
                         </div>
@@ -123,76 +124,76 @@
                         </div>
                         <div class="coffee-list" id="coffee-list">
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/cappuccino.png','Cappuccino', 13)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/cappuccino.png" alt="">
                                 </div>
-                                <label id="coffe-name">Cappuccino</label>
-                                <small id="coffee-price">$13</small>
+                                <label class="coffe-name">Cappuccino</label>
+                                <small class="coffee-price">$13</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/americano.png','Americano', 12)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/americano.png" alt="">
                                 </div>
-                                <label id="coffe-name">Americano</label>
-                                <small id="coffee-price">$12</small>
+                                <label class="coffe-name">Americano</label>
+                                <small class="coffee-price">$12</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/espresso.webp','Espresso', 13)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/espresso.webp" alt="">
                                 </div>
-                                <label id="coffe-name">Espresso</label>
-                                <small id="coffee-price">$13</small>
+                                <label class="coffe-name">Espresso</label>
+                                <small class="coffee-price">$13</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/macchiato.webp','Macchiato', 10)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/macchiato.webp" alt="">
                                 </div>
-                                <label id="coffe-name">Macchiato</label>
-                                <small id="coffee-price">$10</small>
+                                <label class="coffe-name">Macchiato</label>
+                                <small class="coffee-price">$10</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/mocha.webp','Mocha', 10)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/mocha.webp" alt="">
                                 </div>
-                                <label id="coffe-name">Mocha</label>
-                                <small id="coffee-price">$10</small>
+                                <label class="coffe-name">Mocha</label>
+                                <small class="coffee-price">$10</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/latte-coffee.png','Coffee Latte', 12)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/latte-coffee.png" alt="">
                                 </div>
-                                <label id="coffe-name">Coffee Latte</label>
-                                <small id="coffee-price">$12</small>
+                                <label class="coffe-name">Coffee Latte</label>
+                                <small class="coffee-price">$12</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/piccolo-latte.png','Piccolo Latte', 14)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/piccolo-latte.png" alt="">
                                 </div>
-                                <label id="coffe-name">Piccolo Latte</label>
-                                <small id="coffee-price">$14</small>
+                                <label class="coffe-name">Piccolo Latte</label>
+                                <small class="coffee-price">$14</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/ristretto.jpg','Ristretto', 12)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/ristretto.jpg" alt="">
                                 </div>
-                                <label id="coffe-name">Ristretto</label>
-                                <small id="coffee-price">$12</small>
+                                <label class="coffe-name">Ristretto</label>
+                                <small class="coffee-price">$12</small>
                             </li>
 
-                            <li>
+                            <li onclick="addToOrder('./img/coffee/affogato.png','Affogato', 15)" class="item">
                                 <div class="coffee-img">
                                     <img src="./img/coffee/affogato.png" alt="">
                                 </div>
-                                <label id="coffe-name">Affogato</label>
-                                <small id="coffee-price">$15</small>
+                                <label class="coffe-name">Affogato</label>
+                                <small class="coffee-price">$15</small>
                             </li>
                             
                         </div>
@@ -200,7 +201,7 @@
                         <!-- souvenir-list -->
                         <div class="souvenir-list" id="souvenir-list">
 
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod1.png','Wooden Cup', 7)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod1.png" alt="">
                                 </div>
@@ -208,7 +209,7 @@
                                 <small id="souvenir-price">$7</small>
                             </li>
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod2.png','Canada Coffee Mug', 17)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod2.png" alt="">
                                 </div>
@@ -216,7 +217,7 @@
                                 <small id="souvenir-price">$17</small>
                             </li>
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod3.png','Brewers Wooden Mug', 7)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod3.png" alt="">
                                 </div>
@@ -224,7 +225,7 @@
                                 <small id="souvenir-price">$7</small>
                             </li>
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod4.png','Barako Coffee', 2)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod4.png" alt="">
                                 </div>
@@ -232,7 +233,7 @@
                                 <small id="souvenir-price">$2</small>
                             </li>
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod5.png','Silhouette Mug', 24)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod5.png" alt="">
                                 </div>
@@ -241,7 +242,7 @@
                             </li>
 
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod6.png','Mug Keychain', 13)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod6.png" alt="">
                                 </div>
@@ -249,7 +250,7 @@
                                 <small id="souvenir-price">$13</small>
                             </li>
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod7.png','Starbucks cup', 2)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod7.png" alt="">
                                 </div>
@@ -257,7 +258,7 @@
                                 <small id="souvenir-price">$2</small>
                             </li>
                             
-                            <li>
+                            <li onclick="addToOrder('./img/product/prod8.png','Coffee Grinder', 3)">
                                 <div class="souvenir-img">
                                     <img src="./img/product/prod8.png" alt="">
                                 </div>
@@ -293,9 +294,11 @@
                 </div>
 
                 <div class="news-letter">
-                    <h1>Be the first to get new product update</h1>
-                    <input type="email" placeholder="Email address...">
-                    <span>Subscribe</span>
+                    <form action="">
+                        <h1>Be the first to get new product update</h1>
+                        <input type="email" placeholder="Email address..." required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="footer-copy">
@@ -313,9 +316,12 @@
 
     
 </body>
+<script>
+</script>
 
 <!-- <script src="./js/script.js"></script> -->
 <script src="./js/order.js"></script>
+
 
 <script>
     // scroll effect functon on navigation
