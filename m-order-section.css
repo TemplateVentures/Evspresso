@@ -37,6 +37,9 @@
     .order-holder li small{
         font-size: 14px;
     }
+    .total-order small,.total-order label{
+        font-size: 15px;
+    }
   }
   
   @media (max-width:374px) {
@@ -60,7 +63,7 @@
         padding: 0 10px;
     }
     .souvenir-img,.coffee-img{
-        margin-right: 10px;
+        margin-right: 10px !important;
     }
     .order-form{
         padding: 20px 10px;
