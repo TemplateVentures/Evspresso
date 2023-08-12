@@ -40,6 +40,9 @@
     .total-order small,.total-order label{
         font-size: 15px;
     }
+    .selected-item-holder, .coffee-img{
+        margin-right: 10px;
+    }
   }
   
   @media (max-width:374px) {
