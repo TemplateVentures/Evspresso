@@ -1,0 +1,74 @@
+
+@media (max-width:1036px){
+.prod-category{
+    margin-left: 25px;
+}
+}
+
+@media (max-width:1011px){
+    .order-sec-container{
+        flex-direction: column-reverse;
+    }
+    .prod-category{
+        margin-left: 0;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 678px){
+    .order-section{
+        padding: 100px 15px;
+    }
+  }
+
+  @media (max-width: 475px){
+    .prod-header label{
+        font-size: 16px;
+    }
+    .prod-img-header{
+        display: none;
+    }
+    .souvenir-list label, .coffee-list label{
+        font-size: 14px;
+    }
+    .souvenir-list small,
+    .coffee-list small,
+    .order-holder label,
+    .order-holder li small{
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width:374px) {
+    .order-header {
+       padding: 20px 15px;
+    }
+    .order-section{
+        padding: 100px 0;
+    }
+    .prod-category{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .souvenir-list.coffee-list {
+        padding-top: 30px;
+    }
+    .prod-header label{
+        font-size: 15px;
+    }
+    .souvenir-list li,.coffee-list li{
+        padding: 0 10px;
+    }
+    .souvenir-img,.coffee-img{
+        margin-right: 10px;
+    }
+    .order-form{
+        padding: 20px 10px;
+    }
+    .input-box span{
+        font-size: 14px;
+    }
+  }
+
+
+    

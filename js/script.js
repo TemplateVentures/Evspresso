@@ -12,7 +12,7 @@ function scrollFunction() {
   }
 
   let backTop = document.getElementById('back-to-top');
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
      backTop.classList.add('show-bck-top'); 
   }
   else{
@@ -57,8 +57,8 @@ function closeMenu(){
 }
 
 
-// // order button handler
-// let orderBtn = document.getElementById('order-page');
-// orderBtn.addEventListener('click', () => {
-
-// });
+// order button handler
+let orderBtn = document.getElementById('order-page');
+orderBtn.addEventListener('click', () => {
+  window.location.href=("./order.html");
+});

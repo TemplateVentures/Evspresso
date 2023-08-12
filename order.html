@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <title>Evspresso</title>
+        <meta property="og:title" content="Evspresso - A Coffee Lover's Paradise">
+        <meta name="description" content="Welcome to Evspresso!
+        Step into a world where each sip is an enchanting journey into the heart of coffee love. At Evspresso, we are dedicated to crafting the finest coffee experiences that awaken your senses and embrace your passion for all things caffeinated.">
+        <meta property="og:description" content="Indulge in the symphony of flavors at Evspresso. Join our coffee community and savor the passion behind every cup.">
+        <meta property="og:image" content="./img/logo.png">
+        <meta property="og:url" content="https://templateventures.github.io/Evspresso">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Evspresso">
+        <meta property="og:locale" content="en_US">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+</head>
+<body>
+
+    <!-- maincontainer -->
+    <div class="maincontainer">
+        <!-- navigation section -->
+        <div class="navigation-section" id="navigation-section">
+            <div class="logo-section">
+                <div class="logo">
+                    <a href="#"><img src="./img/logo.png" alt="" width="55px"></a>
+                </div>
+                <h1>Evspresso</h1>
+            </div>
+            <div class="navlinks-overlay" id="navlinks-overlay">
+            </div>
+            <div class="navlinks" id="navlinks">
+                <li onclick="closeMenu()"><a href="./index.html">Home</a></li>
+                <li onclick="closeMenu()"><a href="./index.html#About">About</a></li>
+                <li onclick="closeMenu()"><a href="./index.html#Coffee">Coffee</a></li>
+                <li onclick="closeMenu()"><a href="./index.html#Review">Review</a></li>
+                <li onclick="closeMenu()"><a href="./index.html#Blog">Blog</a></li>
+                <li onclick="closeMenu()"><a href="#Order">Order Now</a></li>
+            </div>
+
+            <div class="menu-bar">
+                <ion-icon name="menu" id="menuBar"></ion-icon>
+            </div>
+        </div>
+        <!-- navigation section end-->
+
+        <!-- order-section -->
+             <div class="order-section">
+                <div class="order-header">
+                    <h1>Place Your Coffee Cravings</h1>
+                    <label>Satisfy Your Coffee Longings.</label>
+                </div>
+
+                <div class="order-sec-container" id="Order">
+                    <form>
+                        <div class="order-form">
+                            <div class="input-box">
+                                <span>Full Name *</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span>Email *</span>
+                                <input type="email" required>
+                            </div>
+                            <div class="input-box">
+                                <span>Contact *</span>
+                                <input type="tel" required>
+                            </div>
+                            <div class="order-holder">
+                                <span>Selected Coffee *</span>
+
+                                <!-- li element will be created base on product selected -->
+
+                                <li>
+                                    <div class="coffee-img">
+                                        <img src="./img/coffee/cappuccino.png" alt="">
+                                    </div>
+                                    <label id="coffe-name">Cappuccino</label>
+                                    <small id="coffee-price">$13</small>
+                                    <small class="remove-coffee"><ion-icon name="close"></ion-icon></small>
+                                </li>
+
+                                <li>
+                                    <div class="coffee-img">
+                                        <img src="./img/coffee/cappuccino.png" alt="">
+                                    </div>
+                                    <label id="coffe-name">Cappuccino</label>
+                                    <small id="coffee-price">$13</small>
+                                    <small class="remove-coffee"><ion-icon name="close"></ion-icon></small>
+                                </li>
+
+
+                            </div>
+                            <div class="total-order">
+                                <label>Total: $</label>
+                                <small>0</small>
+                            </div>
+                            <button>Place Order</button>
+                        </div>
+                    </form>
+                    <div class="prod-category">
+                        <div class="prod-header">
+                            <div class="prod-img-header">
+                                <img src="./img/loading.png" alt="" width="60px">
+                            </div>
+                            <label>Select your coffee cravings</label>
+                            <div class="prod-img-header">
+                                <img src="./img/loading.png" alt="" width="60px">
+                            </div>
+                        </div>
+
+                        <!-- coffe list container -->
+                        <div class="coffee-category-header" id="btnHandler">
+                            <span class="Coffee" id="coffeeHandler">Coffee</span>
+                            <span class="Souvenir" id="souvenirHandler">Souvenir</span>
+                        </div>
+                        <div class="coffee-list" id="coffee-list">
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/cappuccino.png" alt="">
+                                </div>
+                                <label id="coffe-name">Cappuccino</label>
+                                <small id="coffee-price">$13</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/americano.png" alt="">
+                                </div>
+                                <label id="coffe-name">Americano</label>
+                                <small id="coffee-price">$12</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/espresso.webp" alt="">
+                                </div>
+                                <label id="coffe-name">Espresso</label>
+                                <small id="coffee-price">$13</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/macchiato.webp" alt="">
+                                </div>
+                                <label id="coffe-name">Macchiato</label>
+                                <small id="coffee-price">$10</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/mocha.webp" alt="">
+                                </div>
+                                <label id="coffe-name">Mocha</label>
+                                <small id="coffee-price">$10</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/latte-coffee.png" alt="">
+                                </div>
+                                <label id="coffe-name">Coffee Latte</label>
+                                <small id="coffee-price">$12</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/piccolo-latte.png" alt="">
+                                </div>
+                                <label id="coffe-name">Piccolo Latte</label>
+                                <small id="coffee-price">$14</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/ristretto.jpg" alt="">
+                                </div>
+                                <label id="coffe-name">Ristretto</label>
+                                <small id="coffee-price">$12</small>
+                            </li>
+
+                            <li>
+                                <div class="coffee-img">
+                                    <img src="./img/coffee/affogato.png" alt="">
+                                </div>
+                                <label id="coffe-name">Affogato</label>
+                                <small id="coffee-price">$15</small>
+                            </li>
+                            
+                        </div>
+
+                        <!-- souvenir-list -->
+                        <div class="souvenir-list" id="souvenir-list">
+
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod1.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Wooden Cup</label>
+                                <small id="souvenir-price">$7</small>
+                            </li>
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod2.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Canada Coffee Mug</label>
+                                <small id="souvenir-price">$17</small>
+                            </li>
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod3.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Brewers Wooden Mug</label>
+                                <small id="souvenir-price">$7</small>
+                            </li>
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod4.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Barako Coffee</label>
+                                <small id="souvenir-price">$2</small>
+                            </li>
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod5.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Silhouette Mug</label>
+                                <small id="souvenir-price">$24</small>
+                            </li>
+
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod6.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Mug Keychain</label>
+                                <small id="souvenir-price">$13</small>
+                            </li>
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod7.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Starbucks cup</label>
+                                <small id="souvenir-price">$2</small>
+                            </li>
+                            
+                            <li>
+                                <div class="souvenir-img">
+                                    <img src="./img/product/prod8.png" alt="">
+                                </div>
+                                <label id="souvenir-name">Coffee Grinder</label>
+                                <small id="souvenir-price">$3</small>
+                            </li>
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- order-section end-->
+
+
+
+            <!-- footer-section -->
+            <div class="footer-section">
+                <div class="footer-logo logo-section">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <h1>Evspresso</h1>
+                </div>
+
+                <div class="legal-links">
+                    <label>Legal Links</label>
+                    <a href="">Privacy | Policy</a>
+                    <a href="">Disclaimer</a>
+                    <a href="">Terms of Services</a>
+                    <a href="">Financing</a>
+                </div>
+
+                <div class="news-letter">
+                    <h1>Be the first to get new product update</h1>
+                    <input type="email" placeholder="Email address...">
+                    <span>Subscribe</span>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <small>&copy; Copyright CebuCoder | 2023</small>
+                <div class="footer-icon">
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                </div>
+                <small>Distributed By: Template Ventures</small>
+            </div>
+            <!-- footer-section end -->
+    </div>
+    <!-- maincontainer end-->
+
+    
+</body>
+
+<!-- <script src="./js/script.js"></script> -->
+<script src="./js/order.js"></script>
+
+<script>
+    // scroll effect functon on navigation
+window.onscroll = function() {scrollFunction()};
+
+let navigationBg = document.getElementById('navigation-section');
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    navigationBg.classList.add('navigation-bg');
+  } else {
+    navigationBg.classList.remove('navigation-bg');
+
+  }
+
+//   let backTop = document.getElementById('back-to-top');
+//   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+//      backTop.classList.add('show-bck-top'); 
+//   }
+//   else{
+//       backTop.classList.remove('show-bck-top');
+//   }
+}
+</script>
+
+<script>
+    // navlink and menu bar function
+let menuBtn = document.getElementById("menuBar");
+let navlinkOverlay = document.getElementById('navlinks-overlay');
+let navlinks = document.getElementById('navlinks');
+menuBtn.addEventListener('click', () => {
+  navlinkOverlay.classList.toggle('show-navlinkOverlay');
+  navlinks.classList.toggle('show-navlinks');
+});
+
+function closeMenu(){
+  navlinkOverlay.classList.remove('show-navlinkOverlay');
+  navlinks.classList.remove('show-navlinks');
+}
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
