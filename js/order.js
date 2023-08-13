@@ -60,8 +60,17 @@ function addToOrder(img,name,price){
      localStorage.setItem('orderedItems',JSON.stringify(orderedItems));
      orders = orderedItems;
      showOrder();
-     alert("Item Added");
+     let showAdded = document.getElementById('added-cont');
+     let addedproductname = document.getElementById('added-product-name');
+    //  alert(name + "Item Added");
+    addedproductname.textContent = name;
+    showAdded.classList.add('show-Added-prod');
+    setTimeout(function (){
+        showAdded.classList.remove('show-Added-prod');
+    },1000);
+  
 }
+    
 
 // get  the id of where the added items will be display
 let ListHolder = document.getElementById('ListHolder');
@@ -105,13 +114,31 @@ showOrder();
 
 
 // function to remove the added item one by one
-function removeItem(itemCount){
+function removeItem(itemCount) {
     let orderedItems = JSON.parse(localStorage.getItem("orderedItems")) || [];
-    orderedItems.splice(itemCount,1);
-    localStorage.setItem("orderedItems",JSON.stringify(orderedItems));
-    orders = orderedItems;
-    showOrder();
-    alert("Item Remove");
+
+    if (itemCount >= 0 && itemCount < orderedItems.length) {
+        let removedItem = orderedItems.splice(itemCount, 1)[0]; // Remove the item and get the removed item's details
+        localStorage.setItem("orderedItems", JSON.stringify(orderedItems));
+        orders = orderedItems;
+        showOrder();
+
+        let showRemove = document.getElementById('remove-cont');
+        let addedproductname = document.getElementById('remove-product-name');
+
+        addedproductname.textContent = removedItem.productName; // Set the removed item's name
+
+        showRemove.classList.add('show-Added-prod');
+        setTimeout(function (){
+            showRemove.classList.remove('show-Added-prod');
+        }, 1000);
+    }
 }
+
+
+
+
+
+
 
 

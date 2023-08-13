@@ -37,6 +37,20 @@ a{
 li{
     list-style: none;
 }
+
+/* Remove the default outline on autofill */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    border: none;
+    border-radius: inherit;
+}
+
+/* Optional: If you want to remove the yellow background color on autofill */
+input:-webkit-autofill::first-line {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
 .maincontainer{
     max-width: 1280px;
     margin: auto;

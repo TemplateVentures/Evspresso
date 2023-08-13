@@ -61,19 +61,19 @@
                 <div class="order-sec-container" id="Order">
                     <form>
                         <div class="order-form">
-                            <div class="input-box">
+                            <div class="input-box err1">
                                 <span>Full Name *</span>
-                                <input type="text" required>
+                                <input id="fullname" type="text" required>
                             </div>
-                            <div class="input-box">
+                            <div class="input-box err2">
                                 <span>Email *</span>
-                                <input type="email" required>
+                                <input id="email" type="email" required>
                             </div>
-                            <div class="input-box">
+                            <div class="input-box err3">
                                 <span>Contact *</span>
-                                <input type="tel" required>
+                                <input id="contact" type="tel" maxlength="11" required>
                             </div>
-                            <div class="order-holder">
+                            <div class="order-holder err4">
                                 <span>Selected Coffee *</span>
 
                                 <!-- li element will be created base on product selected -->
@@ -103,7 +103,7 @@
                                     <small id="totalAmount">0</small>
                                 </span>
                             </div>
-                            <button>Place Order</button>
+                            <button id="placeOrder">Place Order</button>
                         </div>
                     </form>
                     <div class="prod-category">
@@ -276,6 +276,43 @@
 
 
 
+            <!-- success -->
+            <div class="bounce-in orderPlace" id="orderPlace">
+                <span><ion-icon name="checkmark-done-outline"></ion-icon></span>
+                <!-- <h4 id="added-product-name">dasdasdad</h4> -->
+                <small>Order Successfuly Place</small>
+                <small>Please check your email for order update.</small>
+            </div>
+            <!-- success -->
+
+            <!-- added -->
+            <div class="bounce-in added-cont" id="added-cont">
+                <span><ion-icon name="checkmark-done-outline"></ion-icon></span>
+                <h4 id="added-product-name">dasdasdad</h4>
+                <small>Successfuly Added</small>
+            </div>
+            <!-- added -->
+
+            <!-- remove -->
+            <div class="bounce-in remove-cont" id="remove-cont">
+                <span><ion-icon name="trash-outline"></ion-icon></ion-icon></span>
+                <h4 id="remove-product-name">dasdasdad</h4>
+                <small>Successfuly Remove</small>
+            </div>
+            <!-- remove -->
+            
+            <!-- error -->
+            <!-- error -->
+
+            <!-- warning -->
+            <div class="warning-cont bounce-in" id="warning-cont">
+                <span><ion-icon name="warning-outline"></ion-icon></ion-icon></span>
+                <small id="warning-message"></small>
+            </div>
+            <!-- warning -->
+
+
+
             <!-- footer-section -->
             <div class="footer-section">
                 <div class="footer-logo logo-section">
@@ -319,8 +356,8 @@
 <script>
 </script>
 
-<!-- <script src="./js/script.js"></script> -->
 <script src="./js/order.js"></script>
+<script src="./js/email.js"></script>
 
 
 <script>
@@ -336,14 +373,6 @@ function scrollFunction() {
     navigationBg.classList.remove('navigation-bg');
 
   }
-
-//   let backTop = document.getElementById('back-to-top');
-//   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
-//      backTop.classList.add('show-bck-top'); 
-//   }
-//   else{
-//       backTop.classList.remove('show-bck-top');
-//   }
 }
 </script>
 
